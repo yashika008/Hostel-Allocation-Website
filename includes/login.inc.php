@@ -31,6 +31,7 @@ if (isset($_POST['login-submit'])) {
         $_SESSION['year_of_study'] = $row['Year_of_study'];
         $_SESSION['hostel_id'] = $row['Hostel_id'];
         $_SESSION['room_id'] = $row['Room_id'];
+         //Just for checking if session variables are working properly
         if(isset($_SESSION['department'])){
           echo "<script type='text/javascript'>alert('Set')</script>";
         }
